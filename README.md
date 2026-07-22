@@ -54,7 +54,7 @@ public class PlayerController : MirrorFPSController
     public bool isInventoryOpen = true;
     public bool stunned = true;
 
-    protected override bool CenMove()
+    protected override bool CanMove()
     {
         // Player cannot move if inventory is open
         if(isInventoryOpen) return false;
@@ -62,7 +62,7 @@ public class PlayerController : MirrorFPSController
         return true;
     }
 
-    protected override bool CenRotate()
+    protected override bool CanRotate()
     {
         //The player cannot rotate the camera while stunned
         if (stunned) return false;
