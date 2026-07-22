@@ -32,6 +32,7 @@ Features:
 - Add the [Mirror FPS Controller.cs](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/Scripts/Mirror%20FPS%20Controller.cs) component to your player prefab.
 - Add your camera's rotation object to the "Rot Main Camera" field.
 - example:
+
 https://github.com/user-attachments/assets/d5dc8ba1-9b51-4422-b4bc-3325f917ca59
 
 # How It Works
