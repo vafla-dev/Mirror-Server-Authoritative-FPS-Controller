@@ -11,10 +11,10 @@ public class MirrorFPSController : NetworkBehaviour
     #region Data
 
     [Header("Data")]
-    public Camera mainCamera;
+    public Transform rotMainCamera;
 
     [Space, Header("NetSettings")]
-    [SerializeField, SyncVar] private float speedMovement = 6;
+    [SerializeField, SyncVar] public float speedMovement = 6;
     [SerializeField] private float maximumPermissibleDifferenceInPosition = 3;
     [SerializeField, Min(1)] private float maximumAllowableDifferenceInGravitationalAcceleration = 1;
 
@@ -63,7 +63,7 @@ public class MirrorFPSController : NetworkBehaviour
     {
         if (!isLocalPlayer)
         {
-            Destroy(mainCamera.gameObject);
+            Destroy(rotMainCamera.gameObject);
         }
 
 #if DEBUG_MOVEMENT
@@ -302,7 +302,7 @@ public class MirrorFPSController : NetworkBehaviour
 
         rotY = Mathf.Clamp(rotY, -85, 85);
 
-        mainCamera.transform.localRotation = Quaternion.Euler(rotY, 0, 0);
+        rotMainCamera.localRotation = Quaternion.Euler(rotY, 0, 0);
 
         transform.rotation = Quaternion.Euler(0, rotX, 0);
 
@@ -407,7 +407,7 @@ public class MirrorFPSController : NetworkBehaviour
     {
         if (!Input.GetKeyDown(useKey)) return;
 
-        if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out RaycastHit hit, distanceUse, layerUse))
+        if (Physics.Raycast(rotMainCamera.position, rotMainCamera.forward, out RaycastHit hit, distanceUse, layerUse))
         {
             if (hit.transform.TryGetComponent<IInteractable>(out IInteractable used))
             {
