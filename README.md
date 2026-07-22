@@ -10,4 +10,18 @@ Features:
 - ✅ Easy integration
 
 
+# Supported Networking Solutions
+
+- [Mirror](https://github.com/MirrorNetworking/Mirror)
+
+
+# Info
+
+-
+
+# How To Integrate
+
+#How It Works
+
+
 <img width="432" height="432" alt="example of work7-22-2026_20-25-30" src="https://github.com/user-attachments/assets/53b20b31-fbde-4f27-9ab0-092a216a7b43" />
