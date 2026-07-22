@@ -1,4 +1,4 @@
-﻿//#define DEBUG_MOVEMENT
+//#define DEBUG_MOVEMENT
 
 using Mirror;
 using System;
@@ -23,7 +23,7 @@ public class MirrorFPSController : NetworkBehaviour
     [SerializeField] public KeyCode useKey = KeyCode.E;
     [Space]
     [SerializeField] private LayerMask layerUse;
-    [SerializeField] private float distanceUse = 3;
+    [SerializeField] private float distanceUse = 4;
 
     [Space, Header("Physics")]
     [SerializeField] private float initialFallRate = -1;
@@ -53,7 +53,6 @@ public class MirrorFPSController : NetworkBehaviour
     private Vector3 targetForServer;
     private Vector2 rotServer;
 
-    [SerializeField]
     private float gravity = -1;
 
     #endregion
@@ -249,14 +248,16 @@ public class MirrorFPSController : NetworkBehaviour
 #endif
 
             Vector3 diff = pos - transform.position;
-            bool thatIsNotCorrect = (diff.x * diff.x + diff.z * diff.z) <= (maximumPermissibleDifferenceInPosition * maximumPermissibleDifferenceInPosition);
+
+            bool thatIsCorrect = (diff.x * diff.x + diff.z * diff.z) <= (maximumPermissibleDifferenceInPosition * maximumPermissibleDifferenceInPosition);
 
             if (!NetworkServer.active)
                 if ((this.gravity * gravity > 0
-                    && (Mathf.Abs(this.gravity - gravity) > maximumAllowableDifferenceInGravitationalAcceleration + jumpForce)))
+                    && (Mathf.Abs(this.gravity - gravity) > maximumAllowableDifferenceInGravitationalAcceleration + jumpForce))
+                    || !thatIsCorrect)
                     this.gravity = gravity;
 
-            if (thatIsNotCorrect) return;
+            if (thatIsCorrect) return;
 
             characterController.enabled = false;
 
