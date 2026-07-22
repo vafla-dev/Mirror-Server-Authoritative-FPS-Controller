@@ -85,9 +85,9 @@ public class PlayerControler : MirrorFPSController
 
 - This controller is unlike the ones used in popular games.
 - The client doesn't pass an input; instead, it passes two positions: its own and the one where it wants to end up:
-  ```csharp
+  ** ```csharp
   CmdSetMoveTarget(transform.position, transform.position + vector);
-  ```
+  ``` **
 
 
 <img width="432" height="432" alt="example of work7-22-2026_20-25-30" src="https://github.com/user-attachments/assets/53b20b31-fbde-4f27-9ab0-092a216a7b43" />
