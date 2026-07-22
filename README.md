@@ -22,6 +22,7 @@ Features:
 
 - [How To Integrate](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/tree/main#how-to-integrate)
 - [How It Works](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/tree/main#how-it-works)
+- [Customization & Extending Logic](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/tree/main#customization--extending-logic)
 
 # How To Integrate
 
