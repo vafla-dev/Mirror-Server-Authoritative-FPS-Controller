@@ -90,7 +90,7 @@ public class PlayerControler : MirrorFPSController
   ```
 - The server, in turn, does not move the player immediately; it simply stores this data:
    ```csharp
-    [Command]
+     [Command]
      private void CmdSetMoveTarget(Vector3 corentPos, Vector3 target)
      {
          corentPosForServer = corentPos;
