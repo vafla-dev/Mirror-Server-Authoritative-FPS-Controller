@@ -116,7 +116,7 @@ public class PlayerController : MirrorFPSController
 
     smoothMovementOnServer = Mathf.MoveTowards(smoothMovementOnServer, to, 3 * Time.deltaTime);
     ```
-  - Next, he passes this data to the so-called "P" method, which effectively draws a line between the client's current position and the target.
+  - Next, it passes this data to the so-called "P" method, which effectively draws a line between the client's current position and the target.
   - ```csharp
     if (Vector3.Distance(derectional, Vector3.zero) < Vector3.Distance(targetForServer - transform.position, Vector3.zero))
         P(transform.position,
