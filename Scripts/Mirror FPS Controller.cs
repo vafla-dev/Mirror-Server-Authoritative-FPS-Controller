@@ -22,7 +22,7 @@ public class MirrorFPSController : NetworkBehaviour
     [SerializeField] private float sensitivity = 2;
     [SerializeField] public KeyCode useKey = KeyCode.E;
     [Space]
-    [SerializeField] private LayerMask layerUse;
+    [SerializeField] private LayerMask layerUse = ~0;
     [SerializeField] private float distanceUse = 4;
 
     [Space, Header("Physics")]
