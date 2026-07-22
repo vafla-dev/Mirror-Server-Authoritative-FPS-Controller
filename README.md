@@ -26,12 +26,12 @@ Features:
 
 # How To Integrate
 
-- [Download](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/archive/refs/heads/main.zip) as a ZIP file.
-- Unpack the file and move it into the Unity editor.
-- Your project must include [Mirror](https://github.com/MirrorNetworking/Mirror).
-- Add the **Character Controller** component to your player prefab.
-- Add the [Mirror FPS Controller.cs](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/Scripts/Mirror%20FPS%20Controller.cs) component to your player prefab.
-- Add your camera's rotation object to the "Rot Main Camera" field.
+1 [Download](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/archive/refs/heads/main.zip) as a ZIP file.
+2 Unpack the file and move it into the Unity editor.
+3 Your project must include [Mirror](https://github.com/MirrorNetworking/Mirror).
+4 Add the **Character Controller** component to your player prefab.
+5 Add the [Mirror FPS Controller.cs](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/Scripts/Mirror%20FPS%20Controller.cs) component to your player prefab.
+6 Add your camera's rotation object to the "Rot Main Camera" field.
 - example:
 
 https://github.com/user-attachments/assets/d5dc8ba1-9b51-4422-b4bc-3325f917ca59
