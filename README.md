@@ -24,7 +24,7 @@ Features:
 - [Download](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/archive/refs/heads/main.zip) as a ZIP file.
 - Unpack the file and move it into the Unity editor.
 - Your project must include [Mirror](https://github.com/MirrorNetworking/Mirror).
-- 
+- Add the [Mirror FPS Controller.cs](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/Scripts/Mirror%20FPS%20Controller.cs) component to your prefab.
 
 # How It Works
 
