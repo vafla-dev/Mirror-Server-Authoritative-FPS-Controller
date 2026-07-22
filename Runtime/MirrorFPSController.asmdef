@@ -1,0 +1,16 @@
+{
+    "name": "MirrorFPSController",
+    "rootNamespace": "",
+    "references": [
+        "GUID:30817d1a0e6d646d99c048fc403f59be"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
