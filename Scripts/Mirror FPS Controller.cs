@@ -340,7 +340,7 @@ public class MirrorFPSController : NetworkBehaviour
     [Client]
     private void CalculateGravity(ref Vector3 vector)
     {
-        if (!GlobalControler.Instance.roundHasStarted) return;
+        if (!GravityCanBeCalculated()) return;
 
         if (characterController.isGrounded)
         {
@@ -368,7 +368,7 @@ public class MirrorFPSController : NetworkBehaviour
     [Server]
     private void CalculateGravityByServer(ref Vector3 vector)
     {
-        if (!GlobalControler.Instance.roundHasStarted) return;
+        if (!GravityCanBeCalculated(true)) return;
 
         if (characterController.isGrounded)
         {
@@ -394,7 +394,7 @@ public class MirrorFPSController : NetworkBehaviour
     [Command]
     private void CmdJump()
     {
-        if (!GlobalControler.Instance.roundHasStarted) return;
+        if (!GravityCanBeCalculated(true)) return;
 
         isJumping = true;
     }
@@ -464,6 +464,14 @@ public class MirrorFPSController : NetworkBehaviour
     /// Return false if camera rotation should be blocked.
     /// </summary>
     protected virtual bool CenRotate()
+    {
+        return true;
+    }
+
+    /// <summary>
+    /// Return false if gravity calculations should be stopped.
+    /// </summary>
+    protected virtual bool GravityCanBeCalculated(bool isServer = false)
     {
         return true;
     }
