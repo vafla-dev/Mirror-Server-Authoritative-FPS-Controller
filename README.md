@@ -18,7 +18,7 @@ Features:
 # Info
 
 - [How To Integrate](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/README.md#how-to-integrate)
-- [How It Works](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/README.md#how-to-integrate)
+- [How It Works](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/README.md#how-it-works)
 
 # How To Integrate
 
