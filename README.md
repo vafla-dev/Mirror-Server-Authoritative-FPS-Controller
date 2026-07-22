@@ -8,3 +8,6 @@ Features:
 - ✅ CharacterController based
 - ✅ Anti-cheat friendly
 - ✅ Easy integration
+
+
+https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller.git
