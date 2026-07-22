@@ -48,7 +48,7 @@ To integrate these conditions, create a custom script that inherits from [`Mirro
 ```csharp
 using UnityEngine;
 
-public class PlayerControler : MirrorFPSController
+public class PlayerController : MirrorFPSController
 {
     public bool fly = true;
     public bool isInventoryOpen = true;
