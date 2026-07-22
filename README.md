@@ -35,6 +35,8 @@ Features:
 
 https://github.com/user-attachments/assets/d5dc8ba1-9b51-4422-b4bc-3325f917ca59
 
+# Customization & Extending Logic
+
 # How It Works
 
 
