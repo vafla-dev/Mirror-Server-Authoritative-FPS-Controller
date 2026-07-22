@@ -8,4 +8,5 @@ Features:
 - ✅ CharacterController based
 - ✅ Anti-cheat friendly
 - ✅ Easy integration
-<img width="720" height="480" alt="example of work" src="https://github.com/user-attachments/assets/8f5f89a7-ff73-42e4-a1a7-73058c848738" />
+
+<img width="571" height="422" alt="example of work7-22-2026_20-19-52" src="https://github.com/user-attachments/assets/6d7055cf-1588-46d6-a274-ebe126fb5c24" />
