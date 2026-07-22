@@ -21,6 +21,7 @@ Features:
 - [How It Works](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/blob/main/README.md#how-it-works)
 
 # How To Integrate
+- [Download](https://github.com/vafla-dev/Mirror-Server-Authoritative-FPS-Controller/archive/refs/heads/main.zip) as a ZIP file.
 
 # How It Works
 
