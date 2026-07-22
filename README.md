@@ -38,6 +38,10 @@ https://github.com/user-attachments/assets/d5dc8ba1-9b51-4422-b4bc-3325f917ca59
 
 # Customization & Extending Logic
 
+* **`CenMove()`** – Return `false` to block player movement (e.g., when the inventory, chat, or pause menu is open).
+* **`CenRotate()`** – Return `false` to block camera rotation (e.g., during shop interactions or cutscenes).
+* **`GravityCanBeCalculated(bool isServer)`** – Return `false` to pause gravity logic. Useful for flight modes, swimming, or admin NoClip mechanics.
+
 # How It Works
 
 
