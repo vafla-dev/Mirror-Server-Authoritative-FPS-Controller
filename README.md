@@ -232,4 +232,4 @@ public class PlayerControler : MirrorFPSController
 
 <img width="432" height="432" alt="example of work7-22-2026_20-25-30" src="https://github.com/user-attachments/assets/53b20b31-fbde-4f27-9ab0-092a216a7b43" />
 
-**Illustration of server-side logic operation**
+**Note: The illustration shows an impossible scenario where the client stops sending data right in the middle of the process; this was omitted for the sake of clearly demonstrating the server-side logic.**
