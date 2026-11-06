@@ -91,7 +91,7 @@ namespace Mirror_Server_Authoritative_FPS_Controller
 
         public bool isGrounded { get; private set; } = false;
 
-        private float gravity = -1;
+        public float gravity { get; private set; } = -1;
 
         #region Server
 
