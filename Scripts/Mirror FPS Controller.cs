@@ -46,7 +46,7 @@ namespace Mirror_Server_Authoritative_FPS_Controller
 
         [Header("Data")]
         public Transform rotMainCamera;
-        public Transform interpolationCameraRot;
+        [SerializeField] internal Transform interpolationCameraRot;
 
         [Space, Header("NetSettings")]
         [SerializeField, SyncVar] public float speedMovement = 6;
@@ -129,7 +129,7 @@ namespace Mirror_Server_Authoritative_FPS_Controller
         private bool jump = false;
 
 
-        private Vector3 lastPos;
+        protected Vector3 lastPos;
 
         protected float noclipSpeed = 10;
 
