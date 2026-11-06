@@ -89,7 +89,7 @@ namespace Mirror_Server_Authoritative_FPS_Controller
 
         private Vector2 smoothing;
 
-        private bool isGrounded = false;
+        public bool isGrounded { get; private set; } = false;
 
         private float gravity = -1;
 
